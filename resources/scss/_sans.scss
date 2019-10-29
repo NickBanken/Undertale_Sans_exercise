@@ -1,42 +1,49 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
+$white	: #ffffff;
+$black	: #000;
+$blue	: #5579c6;
+$gray	: #bcbec6;
 
 @font-face {
-  font-family: "SansFont";
-  src: url("../fonts/comic_sans_ut-webfont.woff") format("woff");
-  src: url("../fonts/comic_sans_ut-webfont.woff2") format("woff2"); }
+    font-family: "SansFont";
+    src: url("../fonts/comic_sans_ut-webfont.woff") format("woff");
+    src: url("../fonts/comic_sans_ut-webfont.woff2") format("woff2"),
+    }
 
 body {
   height: 100vh;
   align-items: center;
-  background: radial-gradient(circle at 50% 35%, white, #bcbec6 10%, black 40%);
-  background-size: cover;
+  background: radial-gradient(circle at 50% 35%, rgba(white,1),rgba($gray,1) 10%, rgba($black,1) 40%);
   font-family: SansFont;
   color: white; }
 
-main {
+main{
+  position: relative;
   display: flex;
   align-items: center;
-  flex-direction: column; }
+  flex-direction: column;}
 
-.row {
+.row{
   display: flex;
   width: 100%;
-  padding: 1rem 10rem; }
+  padding:1rem 10rem;
 
-.justify-end {
-  justify-content: flex-end; }
+}
 
-.align-end {
-  align-items: flex-end; }
+.justify-end{
+  justify-content: flex-end;
+}
 
-.direction-column {
-  flex-direction: column; }
+.align-end{
+  align-items: flex-end;
+}
 
-.toggleSound {
-  cursor: pointer; }
+.direction-column{
+  flex-direction: column;
+}
+
+.toggleSound{
+  cursor: pointer;
+}
 
 .pixelArt {
   margin: 40px 0px;
@@ -54,18 +61,21 @@ main {
   height: 10px;
   float: left; }
 
-.chatBox {
+.chatBox{
   font-size: 1.8rem;
   background: #000;
   border: 4px solid white;
-  padding: 1rem;
-  height: 100%;
+  padding:1rem;
+  height:100%;
   width: 40%;
-  display: flex; }
+  display: flex;
+}
 
-.space {
-  padding-top: 5px;
-  margin-right: 5px; }
+.space{
+  padding-top:5px ;
+  margin-right: 5px;
+}
+
 
 .pixel:nth-child(28),
 .pixel:nth-child(29),
@@ -231,8 +241,10 @@ main {
 .pixel:nth-child(604),
 .pixel:nth-child(605),
 .pixel:nth-child(606),
-.pixel:nth-child(607) {
-  background: #ffffff; }
+.pixel:nth-child(607),
+{
+	background: $white;
+}
 
 .pixel:nth-child(7),
 .pixel:nth-child(8),
@@ -504,8 +516,10 @@ main {
 .pixel:nth-child(625),
 .pixel:nth-child(626),
 .pixel:nth-child(627),
-.pixel:nth-child(628) {
-  background: #000; }
+.pixel:nth-child(628),
+{
+	background: $black;
+}
 
 .pixel:nth-child(297),
 .pixel:nth-child(313),
@@ -556,8 +570,23 @@ main {
 .pixel:nth-child(468),
 .pixel:nth-child(469),
 .pixel:nth-child(477),
-.pixel:nth-child(478) {
-  background: #5579c6; }
+.pixel:nth-child(478),
+{
+	background: $blue;
+}
+
+#d,#o,#n,#t{
+  cursor: pointer;
+}
+
+.pen{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background:url('../css/images/pennywise.jpg');
+  background-size: cover;
+  top:0;
+}
 
 .pixel:nth-child(320),
 .pixel:nth-child(321),
@@ -566,13 +595,20 @@ main {
 .pixel:nth-child(342),
 .pixel:nth-child(343),
 .pixel:nth-child(351),
-.pixel:nth-child(352) {
-  background: #bcbec6; }
+.pixel:nth-child(352),
+{
+	background: $gray;
+}
 
-.leftEyeWink .pixel:nth-child(111),
-.leftEyeWink .pixel:nth-child(112),
-.leftEyeWink .pixel:nth-child(113),
-.leftEyeWink .pixel:nth-child(132),
-.leftEyeWink .pixel:nth-child(133),
-.leftEyeWink .pixel:nth-child(134) {
-  background: #ffffff; }
+.leftEyeWink {
+	.pixel:nth-child(111),
+	.pixel:nth-child(112),
+	.pixel:nth-child(113),
+	.pixel:nth-child(132),
+	.pixel:nth-child(133),
+	.pixel:nth-child(134),
+	{
+		background: $white;
+	}
+}
+

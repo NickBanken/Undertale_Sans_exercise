@@ -1,16 +1,24 @@
 {
   "name": "halloween-game",
   "version": "1.0.0",
-  "description": "",
+  "description": "|Challenge Parameters  |Challenge Details              |\r |:---------------------|:------------------------------|\r |Repository            |`8.console-rpg`                |\r |Challenge type        |`Spooky learning challenge`    |\r |Duration              |`1 mortal day`                 |\r |Deadline              |`31st on witching hour...`     |\r |Deployment method     |`Dracula's pages`              |\r |Group composition     |`Like a sad single mummy`      |",
   "main": "script.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile": "node-sass scss/main.scss css/style.css -w"
+    "compile": "node-sass resources/scss/main.scss resources/css/style.css -w"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "node-sass": "^4.13.0",
     "sass": "^1.23.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NickBanken/halloweenBE.git"
+  },
+  "bugs": {
+    "url": "https://github.com/NickBanken/halloweenBE/issues"
+  },
+  "homepage": "https://github.com/NickBanken/halloweenBE#readme"
 }
