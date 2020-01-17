@@ -1,3 +1,13 @@
+# RPG Exercise:
+
+As a Coach at BeCode, one of the tasks was to make up fun challenges.
+Since Halloween was nearing us, I made an easy small RPG challenge where our learners had to work with objects.
+
+Feel free to make this exercise yourself ;)
+
+[start file](https://nickbanken.github.io/halloween_exercise_sans/)
+
+
 # Challenge: Console - RPG
 |Challenge Parameters  |Challenge Details              |
 |:---------------------|:------------------------------|
